@@ -4,15 +4,15 @@ Laravel 프로젝트를 도커에서 쉽게 실행시키기 위한 Dockerfile �
 이 Repository 를 pull 받으신 후 원하는 폴더에 들어가서 도커를 실행시키실 수 있습니다. 빌드를 먼저 한 뒤에 원하는 명령어를 실행시키면 됩니다.
 
 ### 빌드하기
-
 ```bash
-$ cd php7.2-dev
+$ cd php7.2-fpm
 $ docker build -t myphp .
 ```
 
 ### 한줄 명령어 실행
 ```bash
 $ docker run -it --rm -v ${PWD}:/var/www -w /var/www myphp php 파일명.php
+$ docker run -it --rm -v ${PWD}:/var/www -w /var/www myphp php artisan list
 ```
 
 ### PHP 웹서버 실행
