@@ -1,4 +1,5 @@
 FROM php:7.2
+MAINTAINER Sangrak Choi <kars@op.gg>
 
 # 필수 설치
 # Install "curl", "libmemcached-dev", "libpq-dev", "libjpeg-dev",
